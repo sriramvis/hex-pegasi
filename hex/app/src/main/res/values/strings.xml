@@ -1,0 +1,15 @@
+<resources>
+    <string name="appName">Hex</string>
+    <string name="frontPage">Front Page</string>
+    <string name="shareComments">Share Comments</string>
+    <string name="shareArticle">Share Article</string>
+    <string name="share">Share</string>
+    <string name="noImageAvailable">No image available</string>
+    <string name="articleFeatureImage">Article feature image</string>
+    <string name="error.unableToLoadFrontPage">Unable to load the Front Page</string>
+    <string name="error.unableToLoadStory">Unable to load story</string>
+    <string name="error.unableToLoadComments">Unable to load comments</string>
+    <string name="error.unableToLoadArticle">Unable to load article</string>
+    <string name="error.default.loadingFailed">Unable to load content</string>
+    <string name="error.default.tryAgain">Try Again</string>
+</resources>
