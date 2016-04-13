@@ -15,6 +15,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -78,10 +80,6 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
         setupItemsUnavailableView();
         setupRefreshLayout();
         setupState();
-//        CMAdManager.applicationInit(this, "1398100", "");
-        NativeAdManagerEx nativeAdManagerEx = new NativeAdManagerEx(this, "1398100");
-        //mActionMap.put(R.id.btn_native, "NativeAdSampleActivity");
-        //loadAdButton = (Button) findViewById(R.id.btn_native);
         iClicked();
         nativeAdContainer = (FrameLayout) findViewById(R.id.big_ad_container);
         initNativeAd();

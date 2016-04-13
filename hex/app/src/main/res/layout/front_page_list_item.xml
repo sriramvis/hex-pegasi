@@ -10,6 +10,7 @@
     android:paddingBottom="12dp"
     android:clickable="true"
     android:focusable="true"
+    android:id="@+id/singleItem"
     android:foreground="?android:attr/selectableItemBackground">
     <LinearLayout
         android:orientation="vertical"
