@@ -26,13 +26,7 @@
             app:layout_scrollFlags="scroll"
             app:tabGravity="fill"
             app:tabMode="fixed"/>
-        <Button
-            android:id="@+id/btn_native"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:visibility="visible"
-            android:onClick="click"
-            android:text="NativeAd" />
+
 
 
     </android.support.design.widget.AppBarLayout>

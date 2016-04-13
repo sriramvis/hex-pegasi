@@ -11,14 +11,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cmcm.adsdk.CMAdManager;
+import com.cmcm.adsdk.nativead.NativeAdManager;
 import com.cmcm.adsdk.nativead.NativeAdManagerEx;
+import com.cmcm.baseapi.ads.INativeAd;
+import com.cmcm.baseapi.ads.INativeAdLoaderListener;
 import com.hexforhn.hex.HexApplication;
+import com.hexforhn.hex.NativeAdSampleActivity;
 import com.hexforhn.hex.R;
 import com.hexforhn.hex.activity.story.StoryActivity;
 import com.hexforhn.hex.adapter.FrontPageListAdapter;
@@ -28,6 +34,7 @@ import com.hexforhn.hex.decoration.DividerItemDecoration;
 import com.hexforhn.hex.listener.ClickListener;
 import com.hexforhn.hex.model.Item;
 import com.hexforhn.hex.model.Story;
+import com.hexforhn.hex.ui.OrionNativeAdview;
 import com.hexforhn.hex.util.view.RefreshHandler;
 import com.hexforhn.hex.util.view.SwipeRefreshManager;
 import com.hexforhn.hex.viewmodel.ItemListItemViewModel;
@@ -35,12 +42,14 @@ import com.hexforhn.hex.viewmodel.factory.ItemListItemFactory;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class FrontPageActivity extends AppCompatActivity implements FrontPageItemsHandler,
         FrontPageStateHandler, ClickListener, RefreshHandler {
-
+    Map<Integer, String> mActionMap = new HashMap<>();
     private RecyclerView mRecyclerView;
     private List<? extends Item> mItems = new ArrayList<>();
     private SwipeRefreshManager mSwipeRefreshManager;
@@ -48,6 +57,17 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
     private final static String STORY_ID_INTENT_EXTRA_NAME = "storyId";
     private GetFrontPageItems mGetFrontPageItems;
     private FrontPageState mState;
+    private  Button loadAdButton;
+
+
+    private NativeAdManager nativeAdManager;
+    private FrameLayout nativeAdContainer;
+    /* 广告 Native大卡样式 */
+    //private Button loadAdButton;
+    private String mAdPosid = "1398100";
+
+    private OrionNativeAdview mAdView = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +80,11 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
         setupState();
 //        CMAdManager.applicationInit(this, "1398100", "");
         NativeAdManagerEx nativeAdManagerEx = new NativeAdManagerEx(this, "1398100");
-
+        //mActionMap.put(R.id.btn_native, "NativeAdSampleActivity");
+        //loadAdButton = (Button) findViewById(R.id.btn_native);
         iClicked();
+        nativeAdContainer = (FrameLayout) findViewById(R.id.big_ad_container);
+        initNativeAd();
     }
 
     @Override
@@ -226,5 +249,64 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
         //loadAd ();
+    }
+
+    public void click(View v){
+        if (mActionMap.containsKey(v.getId())) {
+            String cls = mActionMap.get(v.getId());
+            /*try {
+                //Class activityClass = Class.forName("com.hexforhn.hex." + cls);
+
+
+                startActivity(new Intent(this, NativeAdSampleActivity.class));
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }*/
+
+            startActivity(new Intent(this, NativeAdSampleActivity.class));
+
+        }
+    }
+    private void initNativeAd() {
+
+        Log.d("SRIRAM", "I am inside initNativeAd");
+
+        nativeAdManager = new NativeAdManager(this, mAdPosid);
+        nativeAdManager.setNativeAdListener(new INativeAdLoaderListener() {
+            @Override
+            public void adLoaded() {
+                Log.d("SRIRAM", "I am inside adLoaded");
+                INativeAd ad = nativeAdManager.getAd();
+                Toast.makeText(FrontPageActivity.this, "adLoaded", Toast.LENGTH_SHORT).show();
+                if (mAdView != null) {
+                    // 把旧的广告view从广告容s器中移除
+                    nativeAdContainer.removeView(mAdView);
+                }
+                if (ad == null) {
+                    Toast.makeText(FrontPageActivity.this,
+                            "no native ad loaded!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                //通过广告数据渲染广告View
+                mAdView = OrionNativeAdview.createAdView(getApplicationContext(), ad);
+                nativeAdContainer.addView(mAdView);
+            }
+
+            @Override
+            public void adFailedToLoad(int i) {
+                Toast.makeText(FrontPageActivity.this, "Ad failed to load errorCode:" + i,
+                        Toast.LENGTH_SHORT).show();
+            }
+
+
+            @Override
+            public void adClicked(INativeAd ad) {
+                Toast.makeText(FrontPageActivity.this, "adClicked",
+                        Toast.LENGTH_SHORT).show();
+            }
+
+        });
+        nativeAdManager.loadAd();
+
     }
 }

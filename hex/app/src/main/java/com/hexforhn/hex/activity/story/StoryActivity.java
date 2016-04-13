@@ -35,7 +35,7 @@ import java.util.Map;
 
 public class StoryActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener,
         ItemHandler, TabLayout.OnTabSelectedListener, StoryStateHandler {
-    Map<Integer, String> mActionMap = new HashMap<>();
+
     private ViewPager mPager;
     private PagerAdapter mPagerAdapter;
     private Item mItem;
@@ -46,7 +46,7 @@ public class StoryActivity extends AppCompatActivity implements ViewPager.OnPage
     private final static String STORY_ID_INTENT_EXTRA_NAME = "storyId";
     private GetItem mGetItem;
     private StoryState mState;
-    private  Button loadAdButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,28 +68,12 @@ public class StoryActivity extends AppCompatActivity implements ViewPager.OnPage
 
         mState = new StoryState(this);
         mState.sendEvent(StoryState.Event.LOAD_REQUESTED);
-        mActionMap.put(R.id.btn_native, "NativeAdSampleActivity");
-        loadAdButton = (Button) findViewById(R.id.btn_native);
+
        // loadAdButton.setOnClickListener(this);
 
     }
 
-    public void click(View v){
-        if (mActionMap.containsKey(v.getId())) {
-            String cls = mActionMap.get(v.getId());
-            /*try {
-                //Class activityClass = Class.forName("com.hexforhn.hex." + cls);
 
-
-                startActivity(new Intent(this, NativeAdSampleActivity.class));
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }*/
-
-            startActivity(new Intent(this, NativeAdSampleActivity.class));
-
-        }
-    }
 
     @Override
     public void onEnterLoading() {

@@ -17,6 +17,15 @@
             android:background="@color/primary"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
     </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/big_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp"
+        android:padding="2dp" >
+    </FrameLayout>
+
     <android.support.v4.widget.SwipeRefreshLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -24,6 +33,7 @@
         android:id="@+id/refresh"
         android:layout_height="match_parent"
         tools:context=".activity.frontpage.FrontPageActivity">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -41,5 +51,6 @@
                 layout="@layout/content_unavailable"
                 android:visibility="gone"/>
         </LinearLayout>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>
