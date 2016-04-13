@@ -94,7 +94,4 @@ public class NativeAdSampleActivity extends Activity implements OnClickListener 
 
         });
     }
-
-
-
 }

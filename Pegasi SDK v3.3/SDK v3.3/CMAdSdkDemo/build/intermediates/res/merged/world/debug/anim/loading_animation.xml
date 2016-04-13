@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="359"
+        android:duration="800"
+        android:repeatCount="infinite"
+        android:repeatMode="restart"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+</set><!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/anim/loading_animation.xml -->

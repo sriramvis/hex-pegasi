@@ -1,7 +1,8 @@
-package com.cmcm.ads;
+package com.hexforhn.hex;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -14,23 +15,24 @@ import com.cmcm.baseapi.ads.INativeAd;
 import com.cmcm.baseapi.ads.INativeAdLoaderListener;
 import com.hexforhn.hex.BuildConfig;
 import com.hexforhn.hex.R;
+import com.hexforhn.hex.ui.OrionNativeAdview;
 
-public class NativeAdSampleActivity extends Activity implements OnClickListener {
+public class NativeAdSampleActivity extends Activity {
 
     /* 广告 Native大卡样式 */
     private NativeAdManager nativeAdManager;
     private FrameLayout nativeAdContainer;
     /* 广告 Native大卡样式 */
     private Button loadAdButton;
-    private String mAdPosid = "1096101";
+    private String mAdPosid = "1398100";
 
-    //private OrionNativeAdview mAdView = null;
+    private OrionNativeAdview mAdView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //loadAdButton = (Button) findViewById(R.id.btn_load);
-        loadAdButton.setOnClickListener(this);
+        setContentView(R.layout.native_ad_layout);
+        nativeAdContainer = (FrameLayout) findViewById(R.id.big_ad_container);
         initNativeAd();
     }
 
@@ -39,43 +41,30 @@ public class NativeAdSampleActivity extends Activity implements OnClickListener 
         super.onDestroy();
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            //case R.id.btn_load:
-                //requestNativeAd(v.getId());
-                //break;
-            default:
-                break;
-        }
-    }
-
-
-    private void requestNativeAd(int id) {
-        //if (id == R.id.btn_load) {
-            //nativeAdManager.loadAd();
-        //}
-    }
 
     private void initNativeAd() {
+
+        Log.d("SRIRAM", "I am inside initNativeAd");
+
         nativeAdManager = new NativeAdManager(this, mAdPosid);
         nativeAdManager.setNativeAdListener(new INativeAdLoaderListener() {
             @Override
             public void adLoaded() {
+                Log.d("SRIRAM", "I am inside adLoaded");
                 INativeAd ad = nativeAdManager.getAd();
                 Toast.makeText(NativeAdSampleActivity.this, "adLoaded", Toast.LENGTH_SHORT).show();
-//                if (mAdView != null) {
-//                    // 把旧的广告view从广告容器中移除
-//                    nativeAdContainer.removeView(mAdView);
-//                }
+                if (mAdView != null) {
+                    // 把旧的广告view从广告容s器中移除
+                    nativeAdContainer.removeView(mAdView);
+                }
                 if (ad == null) {
                     Toast.makeText(NativeAdSampleActivity.this,
                             "no native ad loaded!", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 //通过广告数据渲染广告View
-               // mAdView = OrionNativeAdview.createAdView(getApplicationContext(), ad);
-                //nativeAdContainer.addView(mAdView);
+                mAdView = OrionNativeAdview.createAdView(getApplicationContext(), ad);
+                nativeAdContainer.addView(mAdView);
             }
 
             @Override
@@ -92,7 +81,11 @@ public class NativeAdSampleActivity extends Activity implements OnClickListener 
             }
 
         });
+        nativeAdManager.loadAd();
+
     }
+
+
 
 
 

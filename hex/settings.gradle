@@ -1,1 +1,1 @@
-include ':app', ':cmadsdk_base_world_V3.3.0'
+include ':app', ':cmadsdk_ext_world_all_V3.7.0'

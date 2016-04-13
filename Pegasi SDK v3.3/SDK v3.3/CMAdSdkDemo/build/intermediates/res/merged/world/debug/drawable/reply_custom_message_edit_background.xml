@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+        <solid android:color="#FFFFFF" />
+        <stroke  android:width="1dp" android:color="#AEAEAE" />
+        <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</layer-list>
+<!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/drawable/reply_custom_message_edit_background.xml -->

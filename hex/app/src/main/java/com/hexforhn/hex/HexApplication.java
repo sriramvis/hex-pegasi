@@ -19,9 +19,11 @@ public class HexApplication extends Application {
 
     public void onCreate() {
         super.onCreate();
-        NativeAdManager nativeAdManager = new NativeAdManager(this, "1096101");
-        setupAnalytics();
-        CMAdManager.applicationInit(this, "1096", "");
+        //NativeAdManager nativeAdManager = new NativeAdManager(this, "1094101");
+//        setupAnalytics();
+        CMAdManager.applicationInit(this, "1398", "");
+
+        CMAdManager.enableLog();
 
     }
 
@@ -32,7 +34,7 @@ public class HexApplication extends Application {
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
             int MEGABYTE = 1024 * 1024;
-            Cache cache = new DiskBasedCache(getCacheDir(), MEGABYTE);
+                Cache cache = new DiskBasedCache(getCacheDir(), MEGABYTE);
             Network network = new BasicNetwork(new HurlStack());
             mRequestQueue = new RequestQueue(cache, network);
             mRequestQueue.start();
@@ -41,12 +43,12 @@ public class HexApplication extends Application {
         return mRequestQueue;
     }
 
-    private void setupAnalytics() {
-        GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-        Tracker tracker = analytics.newTracker(R.xml.global_tracker);
-        tracker.enableAutoActivityTracking(true);
-        tracker.enableExceptionReporting(true);
-    }
+//    private void setupAnalytics() {
+//        GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+//        Tracker tracker = analytics.newTracker(R.xml.global_tracker);
+//        tracker.enableAutoActivityTracking(true);
+//        tracker.enableExceptionReporting(true);
+//    }
 
 
 }

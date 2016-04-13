@@ -11,12 +11,39 @@ android {
         versionCode 4
         versionName "0.1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "boolean", "IS_CN_VERSION", "false"
+
     }
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'cmmobsample'
+            keyPassword '123456'
+            storeFile file('cmmob.keystore')
+            storePassword '123456'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
+
         }
     }
+
+    productFlavors {
+        china {
+            applicationId "com.cmcm.ads_cn"
+            buildConfigField "boolean", "IS_CN_VERSION", "true"
+        }
+        world {
+            applicationId "com.cmcm.ads"
+            buildConfigField "boolean", "IS_CN_VERSION", "false"
+
+        }
+    }
+
+
 }
 
 dependencies {
@@ -29,11 +56,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    //compile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support:support-annotations:23.1.1'
     androidTestCompile 'com.android.support.test:runner:0.4.1'
     androidTestCompile 'com.android.support.test:rules:0.4.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
-    compile project(':cmadsdk_base_world_V3.3.0')
+    compile project(':cmadsdk_ext_world_all_V3.7.0')
 }

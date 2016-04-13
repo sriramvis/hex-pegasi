@@ -70,10 +70,9 @@ repositories {
 
 
 dependencies {
-    chinaCompile(name: 'cmadsdk_base_china_V3.3.0', ext: 'aar')
-    worldCompile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
     compile 'com.android.support:support-v4:22.2.0'
     compile files('libs/volley.jar')
+    compile project(':cmadsdk_ext_world_all_V3.7.0')
 }
 
 /**

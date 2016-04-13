@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6c0b3c29ff72985a255f4ae8808563b1de372816">
+        <dex dex="/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/pre-dexed/world/debug/classes-7756ef136c79486002341a1dbb24a8f24efc9c05.jar" />
+    </item>
+
+</items>

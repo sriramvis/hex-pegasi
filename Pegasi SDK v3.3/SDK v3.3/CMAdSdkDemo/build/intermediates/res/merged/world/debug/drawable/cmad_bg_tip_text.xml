@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="5dp"/>
+
+    <solid
+        android:color="#66000000"/>
+
+
+
+</shape><!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/drawable/cmad_bg_tip_text.xml -->

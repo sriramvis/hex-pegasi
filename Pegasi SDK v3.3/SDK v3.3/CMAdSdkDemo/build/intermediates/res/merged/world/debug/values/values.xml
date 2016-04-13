@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTheme"><attr format="reference" name="gifMoviewViewStyle"/></declare-styleable>
+    <declare-styleable name="GifMoviewView"><attr format="reference" name="gif"/><attr format="boolean" name="paused"/></declare-styleable>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <drawable name="btn_blue_n">#6ac8fd</drawable>
+    <drawable name="btn_blue_p">#4fbefe</drawable>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="adsdk_debug_enabled">true</string>
+    <string name="adsdk_debug_toast_enabled">false</string>
+    <string name="app_name">天马SDK</string>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="cancel">Cancel</string>
+    <string name="download">Continue</string>
+    <string name="downloading">Loading...</string>
+    <string name="gps_prompt_context">Downloading with mobile network?</string>
+    <string name="gps_prompt_title">Tips</string>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="loadInstitialButtonLabel">请求插屏广告</string>
+    <string name="loadNativeAdBigButtonLabel">请求Native广告</string>
+    <string name="loadNativeAdSmallButtonLabel">请求Native广告(小图样式)</string>
+    <string name="prepareListViewButtonLabel">list view模式</string>
+    <string name="showAdButtonLabel">显示</string>
+    <string name="showInstitialButtonLabel">展示插屏广告</string>
+    <string name="title_activity_banner_demo">横幅广告</string>
+    <string name="title_activity_interstitial_ad">插屏广告</string>
+    <string name="title_activity_native_ad">原生广告</string>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"/>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="cm_interstital">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alwaysDrawnWithCache">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+</resources>

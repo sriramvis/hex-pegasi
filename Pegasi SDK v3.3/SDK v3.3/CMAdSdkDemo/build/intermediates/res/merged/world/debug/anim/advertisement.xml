@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#66000000" />
+
+    <corners
+        android:bottomLeftRadius="14dp"
+        android:bottomRightRadius="14dp"
+        android:topLeftRadius="14dp"
+        android:topRightRadius="14dp" />
+
+</shape>
+<!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/anim/advertisement.xml -->

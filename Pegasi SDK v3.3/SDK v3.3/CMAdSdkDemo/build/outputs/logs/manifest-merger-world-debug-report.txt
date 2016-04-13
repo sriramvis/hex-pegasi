@@ -1,0 +1,149 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:2:1-36:12
+	xmlns:android
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:3:5-27
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:5:5-30
+	android:versionCode
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.0] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:8:9-34
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+		INJECTED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:12:22-64
+application
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:15:5-34:19
+MERGED from [com.android.support:support-v4:22.2.0] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:11:5-54:19
+	android:label
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:19:9-41
+	android:allowBackup
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:16:9-35
+	android:icon
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:18:9-45
+	android:theme
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:17:9-50
+activity#com.cmcm.ads.WelComeActivity
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:21:9-28:20
+	android:label
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:23:13-45
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:22:13-44
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:24:13-27:29
+action#android.intent.action.MAIN
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:26:27-74
+activity#com.cmcm.ads.NativeAdSampleActivity
+ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:29:9-32:20
+	android:label
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/src/main/AndroidManifest.xml:30:13-51
+activity#com.cmcm.picks.PicksLoadingActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:12:9-16:80
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:16:13-77
+	android:taskAffinity
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:15:13-59
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:13:13-63
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:14:13-44
+activity#com.cmcm.adsdk.interstitial.PicksInterstitialActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:17:9-21:53
+	android:configChanges
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:19:13-74
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:21:13-50
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:18:13-81
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:20:13-44
+activity#com.cmcm.picks.webview.PicksBrowser
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:22:9-25:80
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:25:13-77
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:23:13-63
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:24:13-44
+service#com.cmcm.picks.init.DownloadService
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:27:9-30:46
+	android:process
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:30:13-43
+	android:exported
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:28:13-63
+activity#com.cmcm.picks.vastvideo.FullScreenVideoActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:32:9-37:20
+	android:configChanges
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:34:13-74
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:36:13-72
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:33:13-76
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:35:13-48
+activity#com.cmcm.picks.vastvideo.IncentiveVideoPlayActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:38:9-43:20
+	android:configChanges
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:40:13-74
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:42:13-72
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:39:13-79
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:41:13-44
+activity#com.cmcm.picks.vastvideo.VideoAdDetailActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:44:9-50:20
+	android:configChanges
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:46:13-74
+	android:theme
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:49:13-50
+	android:excludeFromRecents
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:47:13-46
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:45:13-74
+	android:launchMode
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:48:13-48
+activity#com.facebook.ads.InterstitialAdActivity
+ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:51:9-53:77
+	android:configChanges
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:53:13-74
+	android:name
+		ADDED from [CMAdSdkDemo:cmadsdk_ext_world_all_V3.7.0:unspecified] /home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi SDK v3.3/SDK v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/AndroidManifest.xml:52:13-67

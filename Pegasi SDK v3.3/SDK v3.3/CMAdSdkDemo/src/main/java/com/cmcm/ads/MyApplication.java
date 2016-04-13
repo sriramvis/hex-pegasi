@@ -1,6 +1,8 @@
 package com.cmcm.ads;
 
 import android.app.Application;
+import android.view.View;
+
 import com.cmcm.adsdk.CMAdManager;
 
 public class MyApplication extends Application {

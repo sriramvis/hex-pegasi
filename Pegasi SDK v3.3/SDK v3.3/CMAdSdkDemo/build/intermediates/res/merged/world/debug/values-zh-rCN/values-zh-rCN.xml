@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/sriram/Desktop/Desktop_proxy/MobAd/Pegasi%20SDK%20v3.3/SDK%20v3.3/CMAdSdkDemo/build/intermediates/exploded-aar/CMAdSdkDemo/cmadsdk_ext_world_all_V3.7.0/unspecified/res/values-zh-rCN/values-zh-rCN.xml -->
+    <eat-comment/>
+    <string name="cancel">取消</string>
+    <string name="download">下载</string>
+    <string name="downloading">正在加载...</string>
+    <string name="gps_prompt_context">移动网络下载会消耗流量，确定下载？</string>
+    <string name="gps_prompt_title">温馨提示</string>
+</resources>

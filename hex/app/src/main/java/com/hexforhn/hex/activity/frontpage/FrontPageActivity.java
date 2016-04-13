@@ -1,5 +1,6 @@
 package com.hexforhn.hex.activity.frontpage;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,7 +14,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.cmcm.adsdk.CMAdManager;
+import com.cmcm.adsdk.nativead.NativeAdManagerEx;
 import com.hexforhn.hex.HexApplication;
 import com.hexforhn.hex.R;
 import com.hexforhn.hex.activity.story.StoryActivity;
@@ -54,6 +58,10 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
         setupItemsUnavailableView();
         setupRefreshLayout();
         setupState();
+//        CMAdManager.applicationInit(this, "1398100", "");
+        NativeAdManagerEx nativeAdManagerEx = new NativeAdManagerEx(this, "1398100");
+
+        iClicked();
     }
 
     @Override
@@ -207,5 +215,16 @@ public class FrontPageActivity extends AppCompatActivity implements FrontPageIte
         snackbarTextView.setTextColor(Color.WHITE);
 
         snackbar.show();
+    }
+
+
+    public void iClicked() {
+        Context context = getApplicationContext();
+        CharSequence text = "Hello toast";
+        int duration = Toast.LENGTH_SHORT;
+        System.out.println("HEEEEEEEEEEEEEEEEEEEERE");
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+        //loadAd ();
     }
 }

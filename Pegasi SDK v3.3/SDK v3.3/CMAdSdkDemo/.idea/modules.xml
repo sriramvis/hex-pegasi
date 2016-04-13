@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CMAdSdkDemo.iml" filepath="$PROJECT_DIR$/CMAdSdkDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmadsdk_ext_world_all_V3.7.0/cmadsdk_ext_world_all_V3.7.0.iml" filepath="$PROJECT_DIR$/cmadsdk_ext_world_all_V3.7.0/cmadsdk_ext_world_all_V3.7.0.iml" />
+    </modules>
+  </component>
+</project>

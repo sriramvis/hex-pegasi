@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cmadsdk_base_world_V3.3.0/cmadsdk_base_world_V3.3.0.iml" filepath="$PROJECT_DIR$/cmadsdk_base_world_V3.3.0/cmadsdk_base_world_V3.3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmadsdk_ext_world_all_V3.7.0/cmadsdk_ext_world_all_V3.7.0.iml" filepath="$PROJECT_DIR$/cmadsdk_ext_world_all_V3.7.0/cmadsdk_ext_world_all_V3.7.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/hex.iml" filepath="$PROJECT_DIR$/hex.iml" />
     </modules>
   </component>
